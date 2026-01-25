@@ -1,3 +1,5 @@
+
+console.log("DZ2.1 працює ✅");
 class School {
     directions:string[] = [];
 
@@ -35,7 +37,7 @@ class Level {groups:Group[] = [];
     get name():string {
         return this._name;
 
-                    }
+    }
 
     get program():string {
         return this._program;
