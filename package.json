@@ -4,7 +4,9 @@
   "type": "module",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc && node dist/dz2.1/main.js",
+    "build": "tsc",
+    "dz2.1": "node dist/dz2.1/main.js",
+    "dz3": "tsc && node dist/dz3/main.js",
     "watch": "tsc --watch"
   },
 
