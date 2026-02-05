@@ -3,9 +3,11 @@
 
 // TODO: Type FilterCallback here
 
-// function filterItems(items: any, predicate: any): any { const result: any = [];
-//   for (const item of items) { if (!predicate(item)) continue; result.push(item); } return
-//   result; } const numbers = [1, 2, 3, 4, 5];
+// function filterItems(items: any, predicate: any): any
+// { const result: any = [];
+//   for (const item of items) { if (!predicate(item)) continue; result.push(item);
+//   } return result; }
+//   const numbers = [1, 2, 3, 4, 5];
 // const evenNumbers = filterItems(numbers, (x) => typeof x === 'number' && x % 2 === 0);
 
 type FilterCallback = (value: string | number) => boolean;
@@ -72,7 +74,7 @@ sendEvent('Interact', 5);
 //     return 100;
 //   }
 //   if (command === 'get-status') {
-//     return 'Stunned';
+//     return 'с;
 //   }
 //   if (command === 'search-area') {
 //     return ['Rock', 'Tree', 'Chest'];
@@ -89,7 +91,7 @@ type CreepType = 'goblin' | 'orc';
 
 // @ts-ignore
 function runCommand(command: 'get-health', targetId: number): number;
-function runCommand(command: 'get-status', targetId: number): string;
+function runCommand(command: 'get-status', targetId: number): number;
 function runCommand(
     command: 'search-area',
     x: number,
@@ -108,11 +110,11 @@ function runCommand(
     arg3?: number
 ) {
     if (command === 'get-health') {
-        return 'health';
+        return 100;
     }
 
     if (command === 'get-status') {
-        return 'status';
+        return ;
     }
 
     if (command === 'search-area') {
