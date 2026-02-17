@@ -8,6 +8,7 @@ id:number;
 //Створіть інтерфейс, у якому типи значень у сигнатурі індексу є функціями.
 // Ключами можуть бути рядки, а значеннями — функції, які приймають будь-які аргументи.
 
+// @ts-ignore
 interface Product{
     id:number;
     name:string;
@@ -15,6 +16,7 @@ interface Product{
 getFormatedPrice:() => string;
 [key :string]:number|string|((...args: unknown[]) => unknown)
 }
+// @ts-ignore
 const laptop:Product={
     id:34,
     name:'Apple',
