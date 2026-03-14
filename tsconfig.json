@@ -8,6 +8,7 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+    "experimentalDecorators": true,
     "rootDir": "src",
     "outDir": "dist",
     "strict": true
